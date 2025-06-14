@@ -6,7 +6,7 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 15:13:53 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/13 16:19:17 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/14 18:15:42 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ class DiamondTrap : public ScavTrap, public FragTrap
 {
 	private:
 		std::string name;
-		ClapTrap::name;
 	public:
 		DiamondTrap();
 		DiamondTrap(std::string name);
@@ -26,8 +25,8 @@ class DiamondTrap : public ScavTrap, public FragTrap
 
 		DiamondTrap & operator=(DiamondTrap const & rhs);
 
-		void	attack();
-		void	WhoAmI();
+		void	attack(const std::string& target);
+		void	whoAmI();
 };
 
 

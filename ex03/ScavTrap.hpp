@@ -6,13 +6,13 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 18:25:00 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/13 13:55:00 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/14 17:45:59 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-class	ScavTrap : public ClapTrap
+class	ScavTrap : virtual public ClapTrap
 {
 	public:
 		ScavTrap();
