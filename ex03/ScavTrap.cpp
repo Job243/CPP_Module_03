@@ -6,7 +6,7 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 18:25:29 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/13 14:19:56 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:12:27 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,11 @@ ScavTrap::ScavTrap(std::string name):ClapTrap(name)
 
 ScavTrap::ScavTrap(ScavTrap const & src):ClapTrap(src)
 {
-	*this = src;
+	this->name = src.name;
+	this->Attack_damage = src.Attack_damage;
+	this->Energy_point = src.Energy_point;
+	this->Hit_point = src.Hit_point;
+	std::cout << "ScavTrap copy constructor has been used." << std::endl;
 }
 
 ScavTrap::~ScavTrap()
@@ -48,6 +52,7 @@ ScavTrap & ScavTrap::operator=(ScavTrap const & rhs)
 		this->Energy_point = rhs.Energy_point;
 		this->Hit_point = rhs.Hit_point;
 	}
+	std::cout << "ScavTrap copy assignment operator has been used." << std::endl;
 	return *this;
 }
 

@@ -6,7 +6,7 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 21:00:00 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/13 14:20:15 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/19 15:12:08 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap():name("noname"), Hit_point(100), Energy_point(10), Attack_damage(0)
 {
-	std::cout << " Default constructor has been used." << std::endl;
+	std::cout << "Default Claptrap constructor has been used." << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name):name(name), Hit_point(100), Energy_point(10), Attack_damage(0)
@@ -24,7 +24,11 @@ ClapTrap::ClapTrap(std::string name):name(name), Hit_point(100), Energy_point(10
 
 ClapTrap::ClapTrap(ClapTrap const & src)
 {
-	*this = src;
+	this->name = src.name;
+	this->Attack_damage = src.Attack_damage;
+	this->Energy_point = src.Energy_point;
+	this->Hit_point = src.Hit_point;
+	std::cout << "ClapTrap copy constructor has been used." << std::endl;
 }
 
 ClapTrap::~ClapTrap()
@@ -41,6 +45,7 @@ ClapTrap & ClapTrap::operator=(ClapTrap const & rhs)
 			this->Energy_point = rhs.Energy_point;
 			this->Hit_point = rhs.Hit_point;
 		}
+	std::cout << " ClapTrap copy assignment operator has been used." << std::endl;
 	return *this;
 }
 
