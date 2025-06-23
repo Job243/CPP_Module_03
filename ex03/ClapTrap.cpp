@@ -6,18 +6,18 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 21:00:00 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/19 15:12:08 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/23 21:37:06 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap():name("noname"), Hit_point(100), Energy_point(10), Attack_damage(0)
+ClapTrap::ClapTrap():name("noname"), Hit_point(10), Energy_point(10), Attack_damage(0)
 {
 	std::cout << "Default Claptrap constructor has been used." << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name):name(name), Hit_point(100), Energy_point(10), Attack_damage(0)
+ClapTrap::ClapTrap(std::string name):name(name), Hit_point(10), Energy_point(10), Attack_damage(0)
 {
 	std::cout << this->name << " has been created." << std::endl;
 }
