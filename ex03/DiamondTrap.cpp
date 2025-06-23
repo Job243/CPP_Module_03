@@ -6,7 +6,7 @@
 /*   By: jmafueni <jmafueni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 15:14:20 by jmafueni          #+#    #+#             */
-/*   Updated: 2025/06/19 15:13:26 by jmafueni         ###   ########.fr       */
+/*   Updated: 2025/06/23 21:37:43 by jmafueni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ DiamondTrap & DiamondTrap::operator=(DiamondTrap const & rhs)
 
 void	DiamondTrap::attack(const std::string& target)
 {
-	FragTrap::attack(target);
+	ScavTrap::attack(target);
 }
 
 void	DiamondTrap::whoAmI()
